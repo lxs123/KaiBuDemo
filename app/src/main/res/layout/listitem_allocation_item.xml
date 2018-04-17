@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="10px">
+
+    <TextView
+        style="@style/style_text"
+        android:paddingLeft="20px"
+        android:text="批号: "
+        android:textSize="26px" />
+
+    <TextView
+        style="@style/style_text"
+        android:layout_width="260px"
+        android:text="20160930"
+        android:textSize="26px" />
+
+    <TextView
+        style="@style/style_text"
+        android:paddingLeft="20px"
+        android:text="库位: "
+        android:textSize="26px" />
+
+    <TextView
+        style="@style/style_text"
+        android:layout_width="120px"
+        android:text="03-03"
+        android:textSize="26px" />
+
+    <TextView
+        style="@style/style_text"
+        android:paddingLeft="20px"
+        android:text="数量: "
+        android:textSize="26px" />
+
+    <TextView
+        style="@style/style_text"
+        android:text="20"
+        android:textSize="26px" />
+</LinearLayout>

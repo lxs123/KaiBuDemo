@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?><!--转移-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="条码" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg"
+            android:hint="请扫描条码" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="工单" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="移出" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="移入" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingLeft="25px"
+                android:textColor="#323232"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="13px"
+                android:background="#FCFCFC"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="27px"
+                android:paddingTop="20px"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="人员" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/etxt_empty_bg"
+            android:orientation="horizontal"
+            android:paddingRight="30px">
+
+            <EditText
+                style="@style/style_edit"
+                android:layout_height="80px"
+                android:layout_marginLeft="0px"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="10px"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/style_text"
+            android:text="机器" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/etxt_empty_bg"
+            android:orientation="horizontal"
+            android:paddingRight="30px">
+
+            <EditText
+                style="@style/style_edit"
+                android:layout_height="80px"
+                android:layout_marginLeft="0px"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="10px"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="班组" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="验收" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="验收" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="报废" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="破坏" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_gravity="right"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="40px"
+        android:src="@drawable/ic_plus" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="88px"
+            android:layout_weight="1"
+            android:background="#4A6CB3"
+            android:onClick="onClick2"
+            android:text="查看明细(0)"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <FrameLayout
+            android:layout_width="3px"
+            android:layout_height="match_parent"
+            android:background="#4A6CB3">
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="50px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0px"
+            android:layout_height="88px"
+            android:layout_weight="1"
+            android:background="#4A6CB3"
+            android:text="提现"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.mydemo.MainActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="条码" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg"
+            android:hint="请扫描条码" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="品号" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="品名" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="规格" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="待验" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="验收" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="验退" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="报废" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_linear">
+
+        <TextView
+            style="@style/style_text"
+            android:text="破坏" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:text="提交"
+        android:textSize="32px"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>

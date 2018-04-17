@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:text="请选择编码的类型"
+        android:textColor="#333333"
+        android:textSize="26px" />
+
+    <CheckBox
+        android:id="@+id/qr_code_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:padding="10px"
+        android:text="二维码(QR)"
+        android:textColor="#323232"
+        android:textSize="28px" />
+
+    <CheckBox
+        android:id="@+id/dm_code_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:padding="10px"
+        android:text="二维码(DM)"
+        android:textColor="#323232"
+        android:textSize="28px" />
+
+    <CheckBox
+        android:id="@+id/bar_code_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:padding="10px"
+        android:text="条形码"
+        android:textColor="#323232"
+        android:textSize="28px" />
+
+
+    <EditText
+        android:id="@+id/code_content"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/etxt_empty_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入编码内容"
+        android:inputType="text"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:textColor="#323232"
+        android:textSize="26px" />
+
+    <EditText
+        android:id="@+id/code_content1"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/etxt_empty_bg"
+        android:gravity="center_vertical"
+        android:hint="请输入编码内容"
+        android:inputType="text"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:textColor="#323232"
+        android:textSize="26px"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@color/colorPrimary"
+        android:onClick="onPrintClick"
+        android:text="打印"
+        android:textColor="@color/white"
+        android:textSize="34px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="30px"
+        android:paddingTop="30px">
+
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/code_print_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30px"
+        android:textColor="#323232"
+        android:textSize="30px" />
+
+</LinearLayout>

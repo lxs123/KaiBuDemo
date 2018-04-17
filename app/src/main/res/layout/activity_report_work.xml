@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><!--报工-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="条码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/etxt_empty_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/style_edit"
+                android:layout_height="80px"
+                android:layout_marginLeft="0px"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请扫描条码" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="right"
+                android:layout_marginBottom="30px"
+                android:src="@drawable/ic_plus" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="工单" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="工艺" />
+
+        <EditText style="@style/style_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="人员" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/etxt_empty_bg"
+            android:orientation="horizontal"
+            android:paddingRight="30px">
+
+            <EditText
+                style="@style/style_edit"
+                android:layout_height="80px"
+                android:layout_marginLeft="0px"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="10px"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="机器" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/etxt_empty_bg"
+            android:orientation="horizontal"
+            android:paddingRight="30px">
+
+            <EditText
+                style="@style/style_edit"
+                android:layout_height="80px"
+                android:layout_marginLeft="0px"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="10px"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="班组" />
+
+        <EditText
+            style="@style/style_edit"
+            android:hint="******"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="报工" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="人时" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_linear"
+        android:layout_marginTop="10px">
+
+        <TextView
+            style="@style/style_text"
+            android:text="机时" />
+
+        <EditText
+            style="@style/style_edit"
+            android:background="@drawable/etxt_empty_bg" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_weight="1"
+            android:background="#4A6CB3"
+            android:onClick="onClick1"
+            android:text="查看明细(0)"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <FrameLayout
+            android:layout_width="3px"
+            android:layout_height="match_parent"
+            android:background="#4B6DB3">
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="50px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_weight="1"
+            android:background="#4A6CB3"
+            android:text="提现"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+    </LinearLayout>
+
+
+</LinearLayout>
